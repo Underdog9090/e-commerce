@@ -7,6 +7,7 @@ export default function ProductPage({ blok }) {
     <main className="flex flex-col items-center">
       {/* Product Title */}
       <h1 className="text-2xl font-bold mb-4">{blok?.title}</h1>
+      <p>{blok.description}</p>
 
       {/* Product Image */}
       {blok?.productImage?.filename && (

@@ -2,6 +2,9 @@ import StoryblokStory from "@storyblok/react/story";
 import { notFound } from "next/navigation";
 import { StoryblokCMS } from "@/utils/cms";
 
+export const fetchCache = 'force-no-store';
+
+
 //Generates static paths for all stories
 //Nextjs will generate a static page for each story
 export async function generateStaticParams() {
